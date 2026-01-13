@@ -1,8 +1,28 @@
 # ForgeSphere
 
-ForgeSphere is a web-based, multi-chain wallet application designed to streamline wallet creation and management for Web3 users. Currently, it supports generating public-private key pairs for Solana and Ethereum wallets, making it easy to create and connect to secure wallets on these blockchains. 
+ForgeSphere is an **educational, client-side Web3 wallet project** built to explore how hierarchical deterministic (HD) wallets work.
+
+This project focuses on learning:
+- mnemonic-based key generation
+- HD derivation paths
+- differences between Solana and Ethereum key derivation
+- security tradeoffs of browser-based cryptography
+
+ForgeSphere is **not a production wallet** and should not be used to store real funds.
 
 ## Features
 
-- **HD Wallet Generation**: Generate hierarchical deterministic (HD) wallets using secure seed phrases, ensuring strong wallet security.
-- **Multi-Chain Compatibility**: Currently supports wallet generation and management for both Solana and Ethereum blockchains.
+- **HD Wallet Generation**  
+  Generate deterministic wallets from mnemonic phrases.
+
+- **Multi-Chain Support**  
+  Wallet derivation for **Solana** and **Ethereum**.
+
+- **Client-Side Cryptography**  
+  All key generation happens entirely in the browser.
+
+## Documentation
+
+- `ARCHITECTURE.md`
+- `SECURITY.md`
+- `ENGINEERING_GUIDELINES.md`
