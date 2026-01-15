@@ -9,15 +9,29 @@ Welcome to ForgeSphere! This guide establishes coding patterns, conventions, and
 ## Table of Contents
 
 1. [Code Style & Conventions](#code-style--conventions)
-2. [Component Patterns](#component-patterns)
-3. [State Management Patterns](#state-management-patterns)
-4. [Adding New Features](#adding-new-features)
-5. [shadcn/ui Usage](#shadcnui-usage)
-6. [Animation Guidelines](#animation-guidelines)
-7. [Toast Notifications](#toast-notifications)
-8. [Pre-Commit Checklist](#pre-commit-checklist)
+2. [Package Manager](#package-manager)
+3. [Component Patterns](#component-patterns)
+4. [State Management Patterns](#state-management-patterns)
+5. [Adding New Features](#adding-new-features)
+6. [shadcn/ui Usage](#shadcnui-usage)
+7. [Animation Guidelines](#animation-guidelines)
+8. [Toast Notifications](#toast-notifications)
+9. [Pre-Commit Checklist](#pre-commit-checklist)
 
 ---
+
+## Code Style & Conventions
+
+### Comments
+
+- Prefer **self-explanatory code** over comments.
+- Do **not** add comments that restate what the code already expresses.
+- Comments are allowed only when explaining:
+  - security-sensitive behavior
+  - non-obvious logic
+  - architectural decisions
+- Avoid inline comments for obvious operations.
+- Remove comments added only for verbosity or narration.
 
 ### Key Conventions
 
@@ -27,6 +41,20 @@ Welcome to ForgeSphere! This guide establishes coding patterns, conventions, and
 | `src/components/*.tsx` | Custom components—PascalCase filenames |
 | `src/hooks/use-*.ts` | Custom hooks—kebab-case with `use-` prefix |
 | `src/lib/*.ts` | Utility functions—kebab-case filenames |
+
+---
+
+## Package Manager
+
+This project uses **pnpm**.
+
+All commands must be run using pnpm:
+
+- `pnpm install`
+- `pnpm run dev`
+- `pnpm run build`
+
+Do not use `npm` or `yarn`.
 
 ---
 
